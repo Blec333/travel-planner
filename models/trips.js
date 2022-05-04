@@ -21,7 +21,6 @@ Trip.init(
     },
       traveler_amount: {
         type: DataTypes.DECIMAL,
-        allowNull: false,
         validate: {
           isDecimal: true,
         },
