@@ -12,7 +12,7 @@ Location.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    location_name: {
       type: DataTypes.STRING,
     },
   },
