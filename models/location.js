@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
-class Tag extends Model {}
+class Location extends Model {}
 
-Tag.init(
+Location.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -12,7 +12,7 @@ Tag.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    tag_name: {
+    name: {
       type: DataTypes.STRING,
     },
   },
@@ -21,8 +21,8 @@ Tag.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'tag',
+    modelName: 'location',
   }
 );
 
-module.exports = Tag;
+module.exports = Location;
